@@ -1,6 +1,6 @@
 import ast
 
-src = """
+SRC = """
 from flask import Flask
 
 app = Flask(__name__)
@@ -10,4 +10,4 @@ def hello_world():
     return "<p>Hello, World!</p>"
 """
 
-print(ast.dump(ast.parse(src), indent=4))
+print(ast.dump(ast.parse(SRC), indent=4))
